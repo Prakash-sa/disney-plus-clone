@@ -1,0 +1,63 @@
+.container{
+    height: 70px;
+    background: #090b13;
+    display: flex;
+    align-items: center;
+    padding: 0 36px;
+    overflow-x: hidden;
+}
+
+.logo{
+    width: 80px;
+}
+
+.navMenu{
+    display: flex;
+    flex: 1;
+    margin-left: 25px;
+    align-items: center;
+}
+
+.navMenu a {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.navMenu a img{
+    height: 20px;
+}
+
+.navMenu a span{
+    font-size: 13px;
+    letter-spacing: 1.42px;
+    color: white;
+    position: relative;
+}
+
+.navMenu a span:after{
+    content: "";
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    opacity: 0;
+    transform-origin: left center;
+    transition: all 250ms cubic-bezier(0.25,0.46,0.45,0.94) 0s;
+    transform: scaleX(0);
+}
+
+.navMenu a:hover span:after{
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.user_img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+}
