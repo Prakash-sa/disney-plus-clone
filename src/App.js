@@ -7,20 +7,19 @@ import Login from './components/Login';
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename='/'>
         <Header/>
         <Routes>
           <Route path="/login" element={<Login/>} />
           <Route path="/" element={<Home/>} />
-          <Route path="/details" element={<Details/>} />
+          <Route path="/detail/:id" element={<Details/>} />
         </Routes>
 
       </Router>
