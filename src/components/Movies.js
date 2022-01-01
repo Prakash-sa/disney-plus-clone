@@ -1,23 +1,22 @@
 import React from 'react'
 import "./Movies.css"
+import {selectMovies} from '../features/movie/movieSlice'
+import {useSelector} from 'react-redux'
 
 function Movies() {
+
+    const movies = useSelector(selectMovies);
+    
     return (
         <div className='movies-container'>
             <h4>Recommended for You</h4>
             <div className='movies-content'>
-                <div className='movies-wrap'>
-                    <img className='movies-img' src='https://lumiere-a.akamaihd.net/v1/images/1024x320_293cc501.png?region=0%2C0%2C1024%2C320'></img>
-                </div>
-                <div className='movies-wrap'>
-                    <img className='movies-img' src='https://lumiere-a.akamaihd.net/v1/images/1024x320_293cc501.png?region=0%2C0%2C1024%2C320'></img>
-                </div>
-                <div className='movies-wrap'>
-                    <img className='movies-img' src='https://lumiere-a.akamaihd.net/v1/images/1024x320_293cc501.png?region=0%2C0%2C1024%2C320'></img>
-                </div>
-                <div className='movies-wrap'>
-                    <img className='movies-img' src='https://lumiere-a.akamaihd.net/v1/images/1024x320_293cc501.png?region=0%2C0%2C1024%2C320'></img>
-                </div>
+                {movies && movies.map((movie)=>(
+                    <div key={movie.id} className='movies-wrap'>
+                        <img src={movie.cardImg}></img>
+                    </div>
+                )
+                )}
             </div>
         </div>
     )
