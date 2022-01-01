@@ -14,7 +14,7 @@ import {
 function App() {
   return (
     <div className="App">
-      <Router basename='/'>
+      <Router>
         <Header/>
         <Routes>
           <Route path="/login" element={<Login/>} />
