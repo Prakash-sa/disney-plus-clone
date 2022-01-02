@@ -57,7 +57,7 @@ function Home() {
         <div className='home-container'>
             <ImgSlider/>
             <Viewers/>
-            <Movies/>
+           {/* <Movies/>*/}
             <Recommends/>
             <NewDisney/>
             <Originals/>

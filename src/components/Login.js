@@ -7,10 +7,12 @@ function Login() {
             <div className='login-content'>
                 <img className='cta-logo-one' src='/images/cta-logo-one.svg'></img>
                 <div className='login-signup'>
-                    Login
+                    START FREE TRIAL
                 </div>
                 <div className='login-description'>
-                    <p>Patricia loves the sound of nails strongly pressed against the chalkboard.</p>
+                    <p>Get Premier Access to Raya and the Last Dragon for an additional fee
+            with a Disney+ Clone subscription. This website is made for
+            educational purpose only. All rights reserved to ©Disney.</p>
                 </div>
                 <img className='cta-logo-two' src='/images/cta-logo-two.png'></img>
                 

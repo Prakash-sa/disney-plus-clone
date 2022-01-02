@@ -25,7 +25,7 @@ function Viewers() {
             <div className='wrap'>
                 <img className='img' alt='img-viewers' src='/images/viewers-starwars.png'/>
                 <video autoPlay={true} loop={true} playsInline={true}>
-                    <source src="/videos/viewers-starwars.mp4" type="video/mp4" />
+                    <source src="/videos/viewers-star-wars.mp4" type="video/mp4" />
                 </video>
             </div>
             <div className='wrap'>

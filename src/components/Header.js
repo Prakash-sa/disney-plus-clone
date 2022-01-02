@@ -56,14 +56,15 @@ function Header() {
     return (
         <div className='container'>
             <img className='logo' src='/images/logo.svg' alt='logo'>
-                {!userName ?
+            </img>
+            {!userName ?
                     <div className='header-login-container'>
                         <div className='header-login-name' onClick={signIn}>Login</div>
                     </div>
                     :
                     <>
                         <div className='navMenu'>
-                            <a href='#'>
+                            <a href='/'>
                                 <img src='/images/home-icon.svg' alt='home-icon'></img>
                                 <span>HOME</span>
                             </a>
@@ -91,9 +92,6 @@ function Header() {
                         <img onClick={signOut} src={userPhoto} alt='user-img' className='user_img'/>
                     </>
                 }
-            </img>
-            
-            
         </div>
     )
 }
